@@ -33,7 +33,7 @@ public class SaluteApp {
             }
 
             switch (scelta) {
-                case 1 {
+                case 1: {
                     if (archivioDati.exists()) {
                         System.out.print("Dati trovati. Vuoi reinserirli? (1=si, 0=no): ");
                         try {
@@ -84,7 +84,7 @@ public class SaluteApp {
                     break;
                 }
 
-                case 2 {
+                case 2: {
                     if (!datiInseriti) {
                         do {
                             System.out.print("Sesso (M/F): ");
@@ -167,7 +167,7 @@ public class SaluteApp {
                     break;
                 }
 
-                case 3 {
+                case 3: {
                     if (!fabbisognoImpostato) {
                         System.out.println("Calcola prima il fabbisogno calorico (opzione 2).");
                         break;
@@ -238,7 +238,7 @@ public class SaluteApp {
                     break;
                 }
 
-                case 4 {
+                case 4: {
                     try (FileWriter reset = new FileWriter("data/registroCalorie.csv", false)) {
                         reset.write("");
                         System.out.println("Registro giornaliero svuotato.");
@@ -248,12 +248,12 @@ public class SaluteApp {
                     break;
                 }
 
-                case 5 {
+                case 5: {
                     System.out.println("Uscita in corso...");
                     break;
                 }
 
-                default {
+                default: {
                     System.out.println("Scelta non valida. Seleziona tra 1 e 5.");
                     break;
                 }
